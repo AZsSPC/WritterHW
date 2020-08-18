@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WritterHW</string>
+    <string name="title_spinner">Предметы</string>
+    <string name="apply">Копировать HTML</string>
+    <string name="copied">Скопировано</string>
+    <string-array name="lessons">
+        <item>SELECT THE LESSON</item>
+        <item>ukrlit</item>
+        <item>zarlit</item>
+        <item>ukrmov</item>
+        <item>ukrist</item>
+        <item>zarist</item>
+    </string-array>
+    <string-array name="wtitles">
+        <item>Класна робота</item>
+        <item>Домашня робота</item>
+    </string-array>
+</resources>

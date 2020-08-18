@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F6F3EF"
+        app:layout_constraintBottom_toTopOf="@+id/copyb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E1D8"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start|top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/copyb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveHTML"
+        android:text="@string/apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/copyb"
+        app:layout_constraintEnd_toStartOf="@+id/copyb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/copyb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
