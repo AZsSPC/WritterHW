@@ -1,17 +1,23 @@
 <resources>
-    <string name="app_name">WritterHW</string>
+    <string name="app_name">WriterHW</string>
     <string name="title_spinner">Предметы</string>
-    <string name="apply">Копировать HTML</string>
+    <string name="apply">Проверить HTML</string>
+    <string name="copy">Копировать HTML</string>
     <string name="copied">Скопировано</string>
+    <string name="save">Сохранить</string>
+    <string name="saved">Сохранено</string>
     <string-array name="lessons">
-        <item>SELECT THE LESSON</item>
-        <item>ukrlit</item>
-        <item>zarlit</item>
-        <item>ukrmov</item>
-        <item>ukrist</item>
-        <item>zarist</item>
+        <item>Украинская литература</item>
+        <item>Зарубежная литература</item>
+        <item>Украинский язык</item>
+        <item>История Украины</item>
+        <item>Всемирная история</item>
+        <item>Физика</item>
+        <item>География</item>
+        <item>Исскуство</item>
+        <item>Биология</item>
     </string-array>
-    <string-array name="wtitles">
+    <string-array name="titles">
         <item>Класна робота</item>
         <item>Домашня робота</item>
     </string-array>

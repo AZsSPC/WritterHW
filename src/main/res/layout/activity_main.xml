@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -26,6 +25,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="start|top"
             android:inputType="textCapSentences|textMultiLine"
+            android:padding="4dp"
             android:textSize="16sp" />
     </ScrollView>
 
@@ -33,17 +33,30 @@
         android:id="@+id/copyb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="saveHTML"
+        android:onClick="openHtml"
         android:text="@string/apply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Spinner
-        android:id="@+id/spin"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/copyb"
         app:layout_constraintEnd_toStartOf="@+id/copyb"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/copyb" />
+        app:layout_constraintTop_toTopOf="@+id/copyb">
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
